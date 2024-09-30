@@ -1,0 +1,32 @@
+<!-- public/game.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jeu - Jeu de Petits Chevaux</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-3">Jeu de Petits Chevaux</h1>
+        <div id="gameBoard" class="mb-3">
+            <!-- Affichage du plateau de jeu -->
+        </div>
+        <div id="gameInfo" class="mb-3">
+            <!-- Informations sur le jeu -->
+        </div>
+        <button id="rollDiceButton" class="btn btn-primary" disabled>Lancer le dé</button>
+        <p id="diceResult" class="mt-3"></p>
+        <div id="possibleMoves" class="mt-3">
+            <!-- Affichage des mouvements possibles -->
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

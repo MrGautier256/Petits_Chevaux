@@ -1,0 +1,24 @@
+<!-- public/lobby.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lobby - Jeu de Petits Chevaux</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Lobby</h1>
+        <p id="roomCodeDisplay"></p>
+        <ul id="playersList" class="list-group"></ul>
+        <button id="startGameButton" class="btn btn-success mt-3">Commencer la partie</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/lobby.js"></script>
+</body>
+
+</html>
